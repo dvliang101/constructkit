@@ -1,0 +1,55 @@
+{
+  "name": "cxui",
+  "version": "1.0.0",
+  "description": "CxUI 🐱  Pronounce Cutie ???🤔",
+  "private": true,
+  "scripts": {
+    "clean": "lerna clean",
+    "build": "rm -rf ./dist && lerna run build",
+    "prepublish": "npm run build",
+    "postinstall": "lerna bootstrap",
+    "start": "start-storybook -p 9001 -c .storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.realestate.com.au:devlob-media/cxui.git"
+  },
+  "keywords": [
+    "cxui"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "^8.5.0",
+    "npm": "^3.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-minify-webpack-plugin": "^0.2.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.9",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.4.0",
+    "lerna": "^2.2.0",
+    "rollup": "^0.50.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-commonjs": "^8.2.1",
+    "rollup-plugin-filesize": "^1.4.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-uglify": "^2.0.1"
+  },
+  "dependencies": {
+    "@storybook/react": "^3.2.12",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@dvliang/button",
+  "version": "1.0.1",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "echo 'Building Button component'",
+    "build": "rollup -c"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "@storybook/react": "^3.2.12",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "rollup": "^0.50.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-commonjs": "^8.2.1",
+    "rollup-plugin-filesize": "^1.4.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-uglify": "^2.0.1"
+  },
+  "peerDependencies": {
+    "react": ">=15"
+  },
+  "description": ""
+}
